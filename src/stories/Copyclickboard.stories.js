@@ -22,6 +22,9 @@ stories.add('App', () => {
 
 stories.add('App', () => {
     return (
-        <Copyclipboard copyText={code}/>
+        <div>
+            <Copyclipboard copyText={code}/>
+            <textarea style={{width: "500px", height: "200px"}}></textarea>
+        </div>
     );
 });
