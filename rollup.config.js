@@ -36,7 +36,7 @@ export default [
             terser(),
             copy({
                 targets: [
-                  { src: './src/README.md', dest: 'dist' },
+                  { src: './README.md', dest: 'dist/public' },
                 ]
             })
         ],
