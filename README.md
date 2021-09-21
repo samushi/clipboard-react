@@ -2,7 +2,7 @@
 
 Display your code on the blog and make it easy to copy with just one click
 
-![How to use](assets/copy-code.gif)
+![How to use](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/copy-code.gif)
 
 ```
 import React from 'react';
