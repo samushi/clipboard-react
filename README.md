@@ -2,9 +2,8 @@
 
 Syntax highlighting your code on the blog and make it easy to copy with just one click
 
-![How to use](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/copy-code.gif)
-<br />
 ![Example](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/code-example-2.png)
+<br />
 
 ```js
 import React from 'react';
@@ -26,12 +25,14 @@ class App extends React.Component {
   }
 }
 ```
+## How to use
+![How to use](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/copy-code.gif)
 
 ### Options
-#### `copyText`: 
+#### `copyText`: String
 Highlighted code text
 
-#### `language`:
+#### `language`: String
 Which code language is used in copyText
 
 #### `showLines`: Boolean
