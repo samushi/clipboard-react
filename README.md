@@ -1,6 +1,6 @@
-## React copy clickboard code
+## React copy clipboard code
 
-Display your code on the blog and make it easy to copy with just one click
+Syntax highlighting your code on the blog and make it easy to copy with just one click
 
 ![How to use](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/copy-code.gif)
 
@@ -26,3 +26,18 @@ class App extends React.Component {
 }
 
 ```
+
+### Supported Language
+
+ - JavaScript - javascript, js
+ - CSS - css
+ - Markup - markup, html, xml, svg, mathml, ssml, atom, rss
+ - PHP - php
+ - PHPDoc - phpdoc
+ - YAML - yaml, yml
+ - Go - go
+ - React JSX - jsx
+ - React TSX - tsx
+ - etc.
+
+ 

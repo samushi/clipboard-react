@@ -28,7 +28,7 @@ export default [
             babel({
                 "exclude": 'node_modules/**',
                 "presets": ["@babel/preset-react"],
-                "plugins": ["styled-jsx/babel"]
+                "plugins": ["styled-jsx/babel", "babel-plugin-prismjs"]
             }),
             resolve(),
             external(),

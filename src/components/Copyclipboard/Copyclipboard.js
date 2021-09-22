@@ -3,6 +3,7 @@ import React, {useEffect, useRef } from 'react';
 import {MdContentCopy, MdCheck} from 'react-icons/md';
 import {useCopyToClipboard} from '../../lib/useCopyToClipboard';
 import Prism from 'prismjs';
+import loadLanguages from 'prismjs/components/';
 import 'prismjs/themes/prism-okaidia.css';
 import '../../lib/style.css';
 
@@ -21,6 +22,7 @@ export const Copyclipboard = ({copyText,language = 'javascript'}) => {
 
     return (
         <div className="samushi-code">
+            Language-{language}
             <pre>
                 <code ref={reference} className={`language-${language}`}>{copyText.toString().trim()}</code>
             </pre>
