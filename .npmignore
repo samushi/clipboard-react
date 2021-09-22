@@ -1,8 +1,0 @@
-node_modules
-src/stories
-assets
-.storybook
-babel.config.json
-rollup.config.js
-old.babelrc
-yarn.lock
