@@ -4,3 +4,5 @@ assets
 .storybook
 babel.config.json
 rollup.config.js
+old.babelrc
+yarn.lock
