@@ -1,5 +1,5 @@
 node_modules
-src
+src/stories
 assets
 .storybook
 babel.config.json
