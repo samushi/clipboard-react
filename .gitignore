@@ -5,3 +5,4 @@ babel.config.json
 rollup.config.js
 old.babelrc
 yarn.lock
+.npmignore
