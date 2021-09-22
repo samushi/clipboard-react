@@ -8,7 +8,7 @@ Syntax highlighting your code on the blog and make it easy to copy with just one
 npm i samushi-clipboard-react
 ```
 
-![Example](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/code-example-2.png)
+![Example](https://raw.githubusercontent.com/samushi/clipboard-react/main/src/assets/code-example-2.png)
 <br />
 
 ```js
@@ -32,7 +32,7 @@ class App extends React.Component {
 }
 ```
 ## How to use
-![How to use](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/copy-code.gif)
+![How to use](https://raw.githubusercontent.com/samushi/clipboard-react/main/src/assets/copy-code.gif)
 
 ### Options
 #### `copyText`: String
