@@ -2,6 +2,12 @@
 
 Syntax highlighting your code on the blog and make it easy to copy with just one click
 
+## How to install
+
+``` 
+npm i samushi-clipboard-react
+```
+
 ![Example](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/code-example-2.png)
 <br />
 
