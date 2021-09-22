@@ -6,11 +6,10 @@ Syntax highlighting your code on the blog and make it easy to copy with just one
 <br />
 ![Example](https://raw.githubusercontent.com/samushi/clipboard-react/main/assets/code-example-2.png)
 
-```
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Copyclipboard} from 'samushi-clipboard-react';
-
 
 const code = `
 const javascriptVariable = "this code need to work";
@@ -26,8 +25,17 @@ class App extends React.Component {
     );
   }
 }
-
 ```
+
+### Options
+#### `copyText`: 
+Highlighted code text
+
+#### `language`:
+Which code language is used in copyText
+
+#### `showLines`: Boolean
+Show or hide line numbers
 
 ### Supported Language
 
