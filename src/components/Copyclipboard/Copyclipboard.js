@@ -5,7 +5,7 @@ import className from 'classnames/bind';
 
 import {MdContentCopy, MdCheck} from 'react-icons/md';
 import {useCopyToClipboard} from '../../lib/useCopyToClipboard';
-import '../../lib/style.css';
+import '../../assets/style.css';
 
 const styles = {
     lineNumber: 'line-numbers'
