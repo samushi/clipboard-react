@@ -1,4 +1,5 @@
 {
+    "presets": ["@babel/preset-react"],
     "plugins": [
         [
             "prismjs",
@@ -19,6 +20,5 @@
                 "css": true
             }
         ]
-    ],
-    "presets": ["@babel/preset-react"]
+    ]
 }

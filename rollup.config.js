@@ -4,6 +4,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import PurgeIcons from 'rollup-plugin-purge-icons'
 import { terser } from 'rollup-plugin-terser';
+import replace from '@rollup/plugin-replace';
 import copy from 'rollup-plugin-copy'
 
 export default [
@@ -21,6 +22,11 @@ export default [
             }
         ],
         plugins: [
+            replace({
+                preventAssignment: true,
+		        'process.browser': true,
+                "process.env.NODE_ENV": JSON.stringify("development")
+            }),
             postcss({
                 plugins: [],
                 minimize: true,
@@ -38,9 +44,9 @@ export default [
                 targets: [
                   { src: ['./README.md', './assets'], dest: 'dist/public' }
                 ]
-            })
+            }),
         ],
-        external: ['copy-to-clipboard', 'prismjs'],
+        external: ['copy-to-clipboard', 'prismjs', 'classnames'],
         onwarn: function(warning) {
             // Skip certain warnings
          

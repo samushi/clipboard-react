@@ -1,0 +1,24 @@
+{
+    "presets": ["@babel/preset-react"],
+    "plugins": [
+        [
+            "prismjs",
+            {
+                "languages": [
+                    "javascript",
+                    "css", 
+                    "html", 
+                    "php", 
+                    "go", 
+                    "jsx", 
+                    "tsx",
+                    "yaml",
+                    "phpdoc"
+                ],
+                "plugins": ["line-numbers"],
+                "theme": "okaidia",
+                "css": true
+            }
+        ]
+    ]
+}

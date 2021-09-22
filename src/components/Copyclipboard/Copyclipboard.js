@@ -1,13 +1,19 @@
 import React, {useEffect, useRef } from 'react';
+import * as Prism from 'prismjs';
+import 'prismjs/themes/prism-okaidia.css';
+import className from 'classnames/bind';
 
 import {MdContentCopy, MdCheck} from 'react-icons/md';
 import {useCopyToClipboard} from '../../lib/useCopyToClipboard';
-import Prism from 'prismjs';
-import loadLanguages from 'prismjs/components/';
-import 'prismjs/themes/prism-okaidia.css';
 import '../../lib/style.css';
 
-export const Copyclipboard = ({copyText,language = 'javascript'}) => {
+const styles = {
+    lineNumber: 'line-numbers'
+}
+
+let cx = className.bind(styles);
+
+export const Copyclipboard = ({copyText, language = 'javascript', showLines = true}) => {
     const reference = useRef('samushi_code');
 
     const [isCopied, copyToClipboard] = useCopyToClipboard({
@@ -20,10 +26,13 @@ export const Copyclipboard = ({copyText,language = 'javascript'}) => {
         Prism.highlightElement(reference.current);
     }, []);
 
+    let classNames = cx({
+        lineNumber: showLines
+    });
+
     return (
         <div className="samushi-code">
-            Language-{language}
-            <pre>
+            <pre className={`language-${language} ${classNames}`}>
                 <code ref={reference} className={`language-${language}`}>{copyText.toString().trim()}</code>
             </pre>
             <button className='btn-copy' onClick={() => copyToClipboard(copyText)}>

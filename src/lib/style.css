@@ -19,3 +19,9 @@
     background: white;
     border-radius: 50%;
 }
+
+pre[class*="language-"] > code {
+	position: relative;
+	display: block;
+}
+
